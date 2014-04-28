@@ -1,0 +1,17 @@
+@media screen and (min-width:850px ){
+
+
+
+header  #cabecera img{
+width:640px ;
+margin-left: 8em;
+
+}
+
+header #logo img
+{
+	width: 140px;
+	height: 100px;
+	float: left;
+}
+}
