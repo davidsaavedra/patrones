@@ -72,20 +72,27 @@ require_once 'php/conexion.php';
         </nav>
      
 		<section id="formulario">
+		
+			<div id="contenedor" class="row">
+                    <div class="col col-xs-10">
+						<article class="registro_formulario">
 
-			
-			<article class="registro_formulario">
+			                                <h2 id="registrarseh2">Registrarse</h2>
+			                                <form action="php/registro.php" method="GET" >
+			                                    <input class="nombre_registro"  type="text" name="nombreusuario" placeholder="Nombre de Usuario" required/>
+			                                    <input type="email" class="mail_registro"  name="correo" placeholder="Email" required autofocus/>
+			                                    <input  type="password"class="contraseña_registro" type="password" name="pass" placeholder="Contraseña" required/>
+			                                    <input class="boton_registro" type="submit" name="boton"value="Registro"/>
+			                               </form>
 
-                                <h2 id="registrarseh2">Registrarse</h2>
-                                <form action="php/registro.php" method="GET" >
-                                    <input class="nombre_registro"  type="text" name="nombreusuario" placeholder="Nombre de Usuario" required/>
-                                    <input type="email" class="mail_registro"  name="correo" placeholder="Email" required autofocus/>
-                                    <input  type="password"class="contraseña_registro" type="password" name="pass" placeholder="Contraseña" required/>
-                                    <input class="boton_registro" type="submit" name="boton"value="Registro"/>
-                               </form>
+							
+						</article>
 
-				
-			</article>
+
+				</div>
+
+					
+		 	</div>			
 		<section/>
 		   	
 
