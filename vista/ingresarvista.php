@@ -1,7 +1,7 @@
 <?php
 
 
-class indexvista{
+class ingresarvista{
     public $base;
     public $ingresar;
     public $nav;
@@ -16,13 +16,13 @@ class indexvista{
         
     }
     public function actualizardiccionario(){
-        $this->diccionario= array('base'=>$this->base,'article'=>$this->ingresar,'nav'=>$this->nav);
+        $this->diccionario= array('base'=>$this->base,'ingresar'=>$this->ingresar,'nav'=>$this->nav);
     }
     
     
     public function refactory_contenido($datos) {
         
-         $article_total="";
+        // $article_total="";
         
          
 //        foreach ($datos as $valor){
@@ -42,8 +42,10 @@ class indexvista{
         
         //echo $article_total;
     
-        $this->base = str_ireplace("{contenido}", $article_total,$this->ingresar );
+       // $this->base = str_ireplace("{contenido}", $article_total,$this->base );
+        $this->base = str_ireplace("{contenido}", $this->ingresar,$this->base );
         $this->base = str_ireplace("{nav}", $this->nav,$this->base );
+        
         
         echo $this->base;
         

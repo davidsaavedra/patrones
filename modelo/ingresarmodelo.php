@@ -1,8 +1,24 @@
 <?php
+require_once '../core/conexion.php';
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
+
+class ingresarmodelo{
+    
+    public $conexion;
+            
+            
+            public function __construct() {
+                $this->conexion=new conexion();
+            }
+    
+            
+            public function get_articulos(){
+                
+                $query="SELECT nombreforo,imagen FROM foro";
+                return  $this ->conexion ->get_resultados_query($query);
+            }   
+    
+}
+
+?>

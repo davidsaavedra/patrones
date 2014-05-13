@@ -1,7 +1,7 @@
 <?php
 
  require_once '../vista/ingresarvista.php'; 
- require_once '../modelo/ingresarindexmodelo.php';        
+ require_once '../modelo/ingresarmodelo.php';        
         
         
         
@@ -33,7 +33,7 @@
         
         
         
-        $index = new indexcontrol();
+        $index = new ingresarcontrol();
         
         $index->principal();
 ?>
