@@ -1,7 +1,7 @@
 <?php
 
- require_once '../vista/queesvista.php'; 
- require_once '../modelo/queesmodelo.php';        
+ require_once '../vista/contactovista.php'; 
+ require_once '../modelo/contactomodelo.php';        
         
         
         
@@ -15,8 +15,8 @@
         
         public function __construct(){
             
-            $this->vista = new queesvista();
-            $this->modelo= new queesmodelo();
+            $this->vista = new contactovista();
+            $this->modelo= new contactomodelo();
             
         }
         

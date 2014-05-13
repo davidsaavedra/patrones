@@ -5,7 +5,7 @@
         
         
         
-        Class contactocontrol{
+        Class queescontrol{
     
         public   $vista;
         public   $modelo;
@@ -33,7 +33,7 @@
         
         
         
-        $index = new contactocontrol();
+        $index = new queescontrol();
         
        $index->principal();
 ?>
