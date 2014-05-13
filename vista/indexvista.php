@@ -38,10 +38,7 @@ class indexvista{
             
         }
         
-        
-        
-        //echo $article_total;
-    
+     
         $this->base = str_ireplace("{contenido}", $article_total,$this->base );
         $this->base = str_ireplace("{nav}", $this->nav,$this->base );
         echo $this->base;
