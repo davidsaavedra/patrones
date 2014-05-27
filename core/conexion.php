@@ -46,7 +46,7 @@
             
             $this->abrir_conexion();
             $datos = $this->conexion->query($query);           
-            
+            if(isset($datos))
             $retorno = array();
             
             while($row = $datos->fetch_array(MYSQLI_ASSOC)){

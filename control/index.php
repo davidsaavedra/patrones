@@ -4,7 +4,9 @@
  require_once '../modelo/indexmodelo.php';        
         
         
-        
+ //session_start();
+ 
+ 
         Class indexcontrol{
     
         public   $vista;
@@ -35,5 +37,11 @@
         
         $index = new indexcontrol();
         
-        $index->principal();
-?>
+        if(isset($_SESSION['user'])){
+            
+            
+            $index->principal($_SESSION['user']);
+
+        }
+        
+    ?>    
